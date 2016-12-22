@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>616</width>
+    <height>497</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(207, 207, 207);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_open">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string>打开</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(207, 207, 207);
+    border-style:outset;
+    border-color: rgba(255, 255, 255, 30);
+    font:bold 14px;
+    color: rgba(0, 0, 0, 100);
+    padding: 6px;}
+QPushButton:hover{
+	background-color: rgb(255, 255, 127);
+	border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0, 0, 200);}
+QPushButton:pressed{
+    background-color: rgb(255, 255, 255);
+	border-color: rgba(255, 255, 255, 30);
+    border-style:insert;
+	color: rgba(0, 0, 0, 100);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/pictur/resizeApi (29).png</normaloff>:/pictur/resizeApi (29).png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_vague">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>模糊化</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(207, 207, 207);
+    border-style:outset;
+    border-color: rgba(255, 255, 255, 30);
+    font:bold 14px;
+    color: rgba(0, 0, 0, 100);
+    padding: 6px;}
+QPushButton:hover{
+	background-color: rgb(255, 255, 127);
+	border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0, 0, 200);}
+QPushButton:pressed{
+	background-color: rgba(255,255,255,255);
+	border-color: rgba(255, 255, 255, 30);
+    border-style:insert;
+	color: rgba(0, 0, 0, 100);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/pictur/resizeApi (27).png</normaloff>:/pictur/resizeApi (27).png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_pale">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string>灰度化</string>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(207, 207, 207);
+    border-style:outset;
+    border-color: rgba(255, 255, 255, 30);
+    font:bold 14px;
+    color: rgba(0, 0, 0, 100);
+    padding: 6px;}
+QPushButton:hover{
+	background-color: rgb(255, 255, 127);
+	border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0, 0, 200);}
+QPushButton:pressed{
+	background-color: rgba(255,255,255,255);
+	border-color: rgba(255, 255, 255, 30);
+    border-style:insert;
+	color: rgba(0, 0, 0, 100);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/pictur/resizeApi (28).png</normaloff>:/pictur/resizeApi (28).png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_origin">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>还原</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(207, 207, 207);
+    border-style:outset;;
+    border-color: rgba(255, 255, 255, 30);
+    font:bold 14px;
+    color: rgba(0, 0, 0, 100);
+    padding: 6px;}
+QPushButton:hover{
+	background-color: rgb(255, 255, 127);
+	border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0, 0, 200);}
+QPushButton:pressed{
+	background-color: rgba(255,255,255,255);
+	border-color: rgba(255, 255, 255, 30);
+    border-style:insert;
+	color: rgba(0, 0, 0, 100);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/pictur/resizeApi (26).png</normaloff>:/pictur/resizeApi (26).png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_save">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>保存</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(207, 207, 207);
+    border-style:outset;
+    border-color: rgba(255, 255, 255, 30);
+    font:bold 14px;
+    color: rgba(0, 0, 0, 100);
+    padding: 6px;}
+QPushButton:hover{
+	background-color: rgb(255, 255, 127);
+	border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0, 0, 200);}
+QPushButton:pressed{
+    background-color: rgb(255, 255, 255);
+	border-color: rgba(255, 255, 255, 30);
+    border-style:insert;
+	color: rgba(0, 0, 0, 100);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/pictur/resizeApi (30).png</normaloff>:/pictur/resizeApi (30).png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="text">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>0</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(207, 207, 207);
+    border-style:outset;
+    border-color: rgba(255, 255, 255, 30);
+    font:bold 14px;
+    color: rgba(0, 0, 0, 100);
+    padding: 6px;}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>611</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_leftrevolve">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>左旋转</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(207, 207, 207);
+    border-style:outset;
+    border-color: rgba(255, 255, 255, 30);
+    font:bold 14px;
+    color: rgba(0, 0, 0, 100);
+    padding: 6px;}
+QPushButton:hover{
+	background-color: rgb(255, 255, 127);
+	border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0, 0, 200);}
+QPushButton:pressed{
+    background-color: rgb(255, 255, 255);
+	border-color: rgba(255, 255, 255, 30);
+    border-style:insert;
+	color: rgba(0, 0, 0, 100);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/pictur/resizeApi (39).png</normaloff>:/pictur/resizeApi (39).png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_rightrevolve">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>0</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>右旋转</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-color: rgb(207, 207, 207);
+    border-style:outset;;
+    border-color: rgba(255, 255, 255, 30);
+    font:bold 14px;
+    color: rgba(0, 0, 0, 100);
+    padding: 6px;}
+QPushButton:hover{
+	background-color: rgb(255, 255, 127);
+	border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0, 0, 200);}
+QPushButton:pressed{
+	background-color: rgba(255,255,255,255);
+	border-color: rgba(255, 255, 255, 30);
+    border-style:insert;
+	color: rgba(0, 0, 0, 100);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/pictur/resizeApi (39)1.png</normaloff>:/pictur/resizeApi (39)1.png</iconset>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_last">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>190</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{	
+	background-image: url(:/pictur/resizeApi (47).png);
+}
+QPushButton:pressed{
+background:transparent}
+	
+	</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>0</y>
+      <width>118</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>0</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_left">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>400</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+border-image: url(:/pictur/resizeApi (43)2.png);}
+QPushButton:hover{
+		border-image: url(:/pictur/resizeApi (43).png);}
+QPushButton:pressed{
+	border-image: url(:/pictur/resizeApi (43)1.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_right">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>400</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+border-image: url(:/pictur/resizeApi (44)2.png);}
+QPushButton:hover{
+		border-image: url(:/pictur/resizeApi (44).png);}
+QPushButton:pressed{
+	border-image: url(:/pictur/resizeApi (44)1.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>390</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+border-image: url(:/pictur/resizeApi (45)2.png);}
+QPushButton:hover{
+		border-image: url(:/pictur/resizeApi (45).png);}
+QPushButton:pressed{
+	border-image: url(:/pictur/resizeApi (45)1.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>190</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QPushButton:hover{
+background-image: url(:/pictur/resizeApi (46).png);}
+QPushButton:pressed{
+background:transparent}
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>pushButton_open</zorder>
+   <zorder>pushButton_vague</zorder>
+   <zorder>pushButton_pale</zorder>
+   <zorder>pushButton_origin</zorder>
+   <zorder>pushButton_save</zorder>
+   <zorder>text</zorder>
+   <zorder>pushButton_leftrevolve</zorder>
+   <zorder>pushButton_rightrevolve</zorder>
+   <zorder>pushButton_last</zorder>
+   <zorder>progressBar</zorder>
+   <zorder>label_2</zorder>
+   <zorder>pushButton_left</zorder>
+   <zorder>pushButton_right</zorder>
+   <zorder>pushButton_start</zorder>
+   <zorder>pushButton</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>616</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_M">
+    <property name="title">
+     <string>文件（&amp;M)</string>
+    </property>
+    <addaction name="action_O"/>
+    <addaction name="action_last"/>
+    <addaction name="action_next"/>
+    <addaction name="action"/>
+   </widget>
+   <widget class="QMenu" name="menu_J">
+    <property name="title">
+     <string>编辑（&amp;J)</string>
+    </property>
+    <addaction name="action_liftrevolve"/>
+    <addaction name="action_rightrevolve"/>
+    <addaction name="action_vague"/>
+    <addaction name="action_pale"/>
+    <addaction name="action_return"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助（H)</string>
+    </property>
+    <addaction name="actionMaker"/>
+   </widget>
+   <addaction name="menu_M"/>
+   <addaction name="menu_J"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(207, 207, 207);</string>
+   </property>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>38</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+	background-image: url(:/pictur/2813289_084938456152_2.jpg);</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>OpenHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-image: url(:/pictur/resizeApi (49).png);
+	font: 75 10pt &quot;新宋体&quot;;}
+QPushButton:hover{
+		}
+QPushButton:pressed{
+	
+	border-image: url(:/pictur/resizeApi (49)1.png);}</string>
+     </property>
+     <property name="text">
+      <string>    左旋转</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>OpenHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-image: url(:/pictur/resizeApi (49).png);
+	font: 75 10pt &quot;新宋体&quot;;}
+QPushButton:hover{
+		}
+QPushButton:pressed{
+	
+	border-image: url(:/pictur/resizeApi (49)1.png);}</string>
+     </property>
+     <property name="text">
+      <string>    右旋转</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>OpenHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-image: url(:/pictur/resizeApi (49).png);
+	font: 75 10pt &quot;新宋体&quot;;}
+QPushButton:hover{
+		}
+QPushButton:pressed{
+	
+	border-image: url(:/pictur/resizeApi (49)1.png);}</string>
+     </property>
+     <property name="text">
+      <string>    灰度化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>OpenHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-image: url(:/pictur/resizeApi (49).png);
+	font: 75 10pt &quot;新宋体&quot;;}
+QPushButton:hover{
+		}
+QPushButton:pressed{
+	
+	border-image: url(:/pictur/resizeApi (49)1.png);}</string>
+     </property>
+     <property name="text">
+      <string>    模糊化</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>OpenHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-image: url(:/pictur/resizeApi (49).png);
+	font: 75 10pt &quot;新宋体&quot;;}
+QPushButton:hover{
+		}
+QPushButton:pressed{
+	
+	border-image: url(:/pictur/resizeApi (49)1.png);}</string>
+     </property>
+     <property name="text">
+      <string>    还  原</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>OpenHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+border-image: url(:/pictur/resizeApi (49).png);
+	font: 75 10pt &quot;新宋体&quot;;}
+QPushButton:hover{
+		}
+QPushButton:pressed{
+	
+	border-image: url(:/pictur/resizeApi (49)1.png);}</string>
+     </property>
+     <property name="text">
+      <string>    二值化</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <action name="action_O">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/resizeApi (29).png</normaloff>:/pictur/resizeApi (29).png</iconset>
+   </property>
+   <property name="text">
+    <string>打   开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_last">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/resizeApi (47).png</normaloff>:/pictur/resizeApi (47).png</iconset>
+   </property>
+   <property name="text">
+    <string>上一张</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Left</string>
+   </property>
+  </action>
+  <action name="action_next">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/resizeApi (46).png</normaloff>:/pictur/resizeApi (46).png</iconset>
+   </property>
+   <property name="text">
+    <string>下一张</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Right</string>
+   </property>
+  </action>
+  <action name="actionMaker">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/my.ico</normaloff>:/pictur/my.ico</iconset>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="action_pale">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/resizeApi (28).png</normaloff>:/pictur/resizeApi (28).png</iconset>
+   </property>
+   <property name="text">
+    <string>灰度化</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="action_vague">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/resizeApi (27).png</normaloff>:/pictur/resizeApi (27).png</iconset>
+   </property>
+   <property name="text">
+    <string>模糊化</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_return">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/resizeApi (26).png</normaloff>:/pictur/resizeApi (26).png</iconset>
+   </property>
+   <property name="text">
+    <string>还   原</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_liftrevolve">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/resizeApi (39).png</normaloff>:/pictur/resizeApi (39).png</iconset>
+   </property>
+   <property name="text">
+    <string>左旋转</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+,</string>
+   </property>
+  </action>
+  <action name="action_rightrevolve">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/resizeApi (39)1.png</normaloff>:/pictur/resizeApi (39)1.png</iconset>
+   </property>
+   <property name="text">
+    <string>右旋转</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+.</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/pictur/q.png</normaloff>:/pictur/q.png</iconset>
+   </property>
+   <property name="text">
+    <string>工具箱</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
